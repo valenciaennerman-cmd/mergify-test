@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: add label to test pull requests
+    conditions:
+      - base=main
+    actions:
+      label:
+        add:
+          - mergify-test
